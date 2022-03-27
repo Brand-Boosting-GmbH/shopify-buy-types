@@ -1,0 +1,46 @@
+{
+    "name": "@brandboostinggmbh/shopify-buy",
+    "version": "2.14",
+    "description": "TypeScript definitions for shopify-buy",
+    "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/shopify-buy",
+    "license": "MIT",
+    "contributors": [
+        {
+            "name": "Martin Köhn",
+            "url": "https://github.com/openminder",
+            "githubUsername": "openminder"
+        },
+        {
+            "name": "Stephen Traiforos",
+            "url": "https://github.com/straiforos",
+            "githubUsername": "straiforos"
+        },
+        {
+            "name": "Juan Manuel Incaurgarat",
+            "url": "https://github.com/kilinkis",
+            "githubUsername": "kilinkis"
+        },
+        {
+            "name": "Chris Worman",
+            "url": "https://github.com/chrisworman-pela",
+            "githubUsername": "chrisworman-pela"
+        },
+        {
+            "name": "Maciej Baron",
+            "url": "https://github.com/MaciekBaron",
+            "githubUsername": "MaciekBaron"
+        }
+    ],
+    "main": "",
+    "types": "index.d.ts",
+    "private": false,
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/shopify-buy"
+    },
+    "scripts": {},
+    "dependencies": {},
+    "typesPublisherContentHash": "4d4783e17c0b1b4e2d6f1955d000f67c946b4b6d07739d18215388ecbe310c6b",
+    "typeScriptVersion": "3.8"
+}
