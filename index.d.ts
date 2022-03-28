@@ -894,3 +894,7 @@ declare module ShopifyBuy {
     }
   }
   
+  declare module 'shopify-buy' {
+    export = ShopifyBuy;
+  }
+  
