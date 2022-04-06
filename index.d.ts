@@ -683,7 +683,7 @@ declare module ShopifyBuy {
     /**
     * The price of the product variant in the default shop currency.
     */
-    unitPrice: string
+    unitPrice: MoneyV2
 
     /**
     * TODO
