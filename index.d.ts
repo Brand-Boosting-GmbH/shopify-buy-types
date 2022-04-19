@@ -568,10 +568,6 @@ declare module ShopifyBuy {
     * The name of the product's vendor.
     */
     vendor: string
-    /**
-     * A comma separated list of tags that have been added to the product. Additional access scope required for private apps: unauthenticated_read_product_tags.
-     */
-    tags: string[]
   }
 
   export interface UnitPriceMeasurement {
