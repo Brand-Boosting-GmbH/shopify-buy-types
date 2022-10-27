@@ -1,4 +1,4 @@
-// Type definitions for shopify-buy 2.14
+// Type definitions for shopify-buy 2.17
 // Project: https://github.com/Shopify/js-buy-sdk#readme
 // Definitions by: Martin Köhn <https://github.com/openminder>
 //                 Stephen Traiforos <https://github.com/straiforos>
@@ -663,7 +663,7 @@ declare module ShopifyBuy {
     /**
     * The price of the product variant in the default shop currency.
     */
-    price: string
+    price: MoneyV2
     /**
     * The weight of the product variant in the unit system specified with weight_unit.
     */
@@ -679,7 +679,7 @@ declare module ShopifyBuy {
     /**
     * The compare-at price of the variant in the default shop currency.
     */
-    compareAtPrice: string
+    compareAtPrice: MoneyV2
     /**
     * The price of the product variant in the default shop currency.
     */
@@ -702,7 +702,7 @@ declare module ShopifyBuy {
     */
     image: Image
     /**
-    * The compare-at price of the variant in the default shop currency.
+    * @deprecated The compare-at price of the variant in the default shop currency.
     */
     compareAtPriceV2: MoneyV2
     /**
@@ -710,7 +710,7 @@ declare module ShopifyBuy {
     */
     presentmentPrices: PresentmentPrices[]
     /**
-    * The price of the product variant in the default shop currency.
+    * @deprecated The price of the product variant in the default shop currency.
     */
     priceV2: MoneyV2
   }
@@ -772,9 +772,17 @@ declare module ShopifyBuy {
     /**
     * The amount that was taken from the gift card by applying it.
     */
+    amountUsed: MoneyV2
+    /**
+    * @deprecated The amount that was taken from the gift card by applying it.
+    */
     amountUsedV2: MoneyV2
     /**
     * The amount left on the gift card.
+    */
+    balance: MoneyV2
+    /**
+    * @deprecated The amount left on the gift card.
     */
     balanceV2: MoneyV2
     /**
@@ -811,7 +819,7 @@ declare module ShopifyBuy {
     /**
     * The amount left to be paid. This is equal to the cost of the line items, duties, taxes and shipping minus discounts and gift cards.
     */
-    paymentDue: string
+    paymentDue: MoneyV2
     /**
     * The url pointing to the checkout accessible from the web.
     */
@@ -835,15 +843,15 @@ declare module ShopifyBuy {
     /**
     * The sum of all the taxes applied to the line items and shipping lines in the checkout.
     */
-    totalTax: string
+    totalTax: MoneyV2
     /**
     * Price of the checkout before duties, shipping and taxes.
     */
-    subtotalPrice: string
+    subtotalPrice: MoneyV2
     /**
     * The sum of all the prices of all the items in the checkout, duties, taxes and discounts included.
     */
-    totalPrice: string
+    totalPrice: MoneyV2
     /**
     * The date and time when the checkout was completed.
     */
@@ -890,11 +898,11 @@ declare module ShopifyBuy {
     */
     discountApplications: string[]
     /**
-    * The sum of all the prices of all the items in the checkout, duties, taxes and discounts included.
+    * @deprecated The sum of all the prices of all the items in the checkout, duties, taxes and discounts included.
     */
     totalPriceV2: MoneyV2
     /**
-    * Price of the checkout before duties, shipping and taxes.
+    * @deprecated Price of the checkout before duties, shipping and taxes.
     */
     subtotalPriceV2: MoneyV2
     /**
@@ -902,11 +910,11 @@ declare module ShopifyBuy {
     */
     lineItemsSubtotalPrice: MoneyV2
     /**
-    * The sum of all the taxes applied to the line items and shipping lines in the checkout.
+    * @deprecated The sum of all the taxes applied to the line items and shipping lines in the checkout.
     */
     totalTaxV2: MoneyV2
     /**
-    * The amount left to be paid. This is equal to the cost of the line items, duties, taxes and shipping minus discounts and gift cards.
+    * @deprecated The amount left to be paid. This is equal to the cost of the line items, duties, taxes and shipping minus discounts and gift cards.
     */
     paymentDueV2: MoneyV2
     /**
@@ -920,7 +928,7 @@ declare module ShopifyBuy {
     /**
     * TODO
     */
-    onlineStoreUrl: string | null
+    onlineStoreUrl: string | undefined
   }
 
   export interface Collection {
