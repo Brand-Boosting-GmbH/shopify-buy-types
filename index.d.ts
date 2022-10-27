@@ -702,9 +702,17 @@ declare module ShopifyBuy {
     */
     image: Image
     /**
+    * @deprecated The compare-at price of the variant in the default shop currency.
+    */
+    compareAtPriceV2: MoneyV2
+    /**
     * List of prices and compare-at prices in the presentment currencies for this shop.
     */
     presentmentPrices: PresentmentPrices[]
+    /**
+    * @deprecated The price of the product variant in the default shop currency.
+    */
+    priceV2: MoneyV2
   }
 
   export interface LineItem extends GraphModel {
@@ -766,9 +774,17 @@ declare module ShopifyBuy {
     */
     amountUsed: MoneyV2
     /**
+    * @deprecated The amount that was taken from the gift card by applying it.
+    */
+    amountUsedV2: MoneyV2
+    /**
     * The amount left on the gift card.
     */
     balance: MoneyV2
+    /**
+    * @deprecated The amount left on the gift card.
+    */
+    balanceV2: MoneyV2
     /**
     * A globally-unique identifier.
     */
@@ -882,9 +898,25 @@ declare module ShopifyBuy {
     */
     discountApplications: string[]
     /**
+    * @deprecated The sum of all the prices of all the items in the checkout, duties, taxes and discounts included.
+    */
+    totalPriceV2: MoneyV2
+    /**
+    * @deprecated Price of the checkout before duties, shipping and taxes.
+    */
+    subtotalPriceV2: MoneyV2
+    /**
     * The sum of all the prices of all the items in the checkout. Duties, taxes, shipping and discounts excluded.
     */
     lineItemsSubtotalPrice: MoneyV2
+    /**
+    * @deprecated The sum of all the taxes applied to the line items and shipping lines in the checkout.
+    */
+    totalTaxV2: MoneyV2
+    /**
+    * @deprecated The amount left to be paid. This is equal to the cost of the line items, duties, taxes and shipping minus discounts and gift cards.
+    */
+    paymentDueV2: MoneyV2
     /**
     * TODO
     */
